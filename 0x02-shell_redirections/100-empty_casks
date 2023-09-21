@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -empty -exec sh -c 'echo "${1##*/}"' sh {} \; -o -type d -empty -exec sh -c 'echo "${1##*/}"' sh {} \;
+find . -type f,d -empty -print0 | xargs -0 -n1 basename
