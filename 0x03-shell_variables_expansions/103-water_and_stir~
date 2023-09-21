@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(echo "ibase=${WATER};obase=bestchol;${STIR}+${STIR}" | bc)
