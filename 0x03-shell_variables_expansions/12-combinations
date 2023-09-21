@@ -1,0 +1,2 @@
+#!/bin/bash
+paste -d'\0' <(echo {a..z}{a..z} | tr ' ' '\n') | grep -v 'oo' | awk '{print $1}'
