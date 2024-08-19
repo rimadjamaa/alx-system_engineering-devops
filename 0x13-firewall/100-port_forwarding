@@ -1,0 +1,2 @@
+# Redirect traffic from port 8080/tcp to port 80/tcp
+-A PREROUTING -t nat -p tcp --dport 8080 -j DNAT --to-destination :80
