@@ -1,0 +1,5 @@
+# test.pp
+file { '/tmp/test_file':
+  ensure  => 'file',
+  content => template('nginx/nginx.conf.erb'),
+}
